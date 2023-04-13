@@ -267,7 +267,7 @@ body{
             animation-delay: 6s;
         }
     }
-    .wrapper{
-     height: 350px;
-    }
+.wrapper.active{
+  height: 555px;
+}
 }
