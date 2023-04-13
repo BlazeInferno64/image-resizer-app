@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Reszier App | Free Image Resizer</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="upload-box">
+      <input type="file" accept="image/*" hidden />
+      <img src="./img/upload-icon.svg" alt="">
+      <p>
+        Browse File to Upload
+      </p>
+    </div>
+    <div class="content">
+      <div class="row sizes">
+        <div class="column width">
+          <label for="width">Width</label>
+          <input type="number" />
+        </div>
+        <div class="column height">
+          <label for="height">Height</label>
+          <input type="number" />
+        </div>
+      </div>
+      <div class="row checkboxes">
+        <div class="column ratio">
+          <input type="checkbox" id="ratio" checked>
+          <label for="Aspect Ratio">Lock aspect ratio</label>
+        </div>
+        <div class="column quality">
+          <input type="checkbox" id="quality">
+          <label for="Reduce Quality">Reduce quality</label>
+        </div>
+      </div>
+      <button class="download-btn">
+        <i class="fa fa-download"></i>
+        Download Image
+      </button>
+    </div>
+  </div>
+
+    <div class="footer">
+        <footer>
+            <div class="help">
+                <h4>
+                    Some useful links - 
+                </h4>
+                <br>
+                <ul class="li">
+                    <li>
+                        <a href="https://blaizinginfernodragon123.github.io/#contact" target="_blank" class="li">Facing a problem? Contact me here</a>
+                    </li>
+                     <li>
+                         <a href="https://github.com/blaizinginfernodragon123/image-resizer-app/issues/new/choose" target="_blank" class="li">File an Issue here</a>
+                     </li>
+                    <li>
+                        <a href="mailto:blazinginfernodragon123@gmail.com" class="li" target="_blank">Mail me here</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="border">
+            <h3>
+                Copyright &copy;2023-24 
+                <a target="_blank" href="https://github.com/blaizinginfernodragon123">
+                    <i class="fa fa-github"></i>
+                    BlaizingInfernoDragon123
+                </a>
+            </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
