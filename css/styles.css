@@ -1,0 +1,270 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 1px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: 450ms ease-in-out;
+  animation: change 12s ease-in-out infinite;
+  animation-delay: 2s;
+  background: linear-gradient(1000deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+}
+@keyframes change {
+    0%{
+        background: linear-gradient(1000deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+    }
+    30%{
+        background: linear-gradient(1000deg,rgb(1, 209, 88),80%,rgb(43, 177, 255))
+    }
+    50%{
+        background: linear-gradient(1000deg,rgb(1, 209, 88),50%,rgb(1, 209, 88))
+    }
+    70%{
+        background: linear-gradient(1000deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+    }
+    80%{
+        background: linear-gradient(1000deg,rgb(1, 209, 88),30%,rgb(43, 177, 255))
+    }
+    90%{
+        background: linear-gradient(1000deg,rgb(43, 177, 255),50%,rgb(43, 177, 255))
+
+    }
+    100%{
+        background: linear-gradient(1000deg,rgb(43, 177, 255),50%,rgb(1, 209, 88));
+        transition: 10s ease-in-out;
+        animation-delay: 6s;
+    }
+}
+.wrapper{
+  animation: display 0.2s ease-in-out;
+  width: 450px;
+  height: 288px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 9px;
+  transition: height 0.3s ease;
+  box-shadow: 0 12px 16px 0 rgba(28, 29, 28, 0.17),0 17px 50px 0 rgba(46, 49, 48, 0.27);
+}
+@keyframes display {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(0.1);
+    }
+    20%{
+        transform: scale(0.2);
+    }
+    30%{
+        opacity: 0.3;
+        transform: scale(0.3);
+    }
+    40%{
+        transform: scale(0.4);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    60%{
+        transform: scale(0.6);
+    }
+    70%{
+        transform: scale(0.7);
+    }
+    80%{
+        opacity: 0.8;
+        transform: scale(0.8);
+    }
+    90%{
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.wrapper.active{
+  height: 537px;
+}
+.wrapper.active .footer{
+    position: absolute;
+    top: 700px;
+}
+.wrapper .upload-box{
+  height: 225px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #afafaf;
+  transition: 0.4s ease;
+}
+.wrapper .upload-box:hover{
+    background-color: #ded;
+}
+.wrapper.active .upload-box{
+  border: none;
+}
+.upload-box p{
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+.wrapper.active .upload-box p{
+  display: none;
+}
+.wrapper.active .upload-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.wrapper .content{
+  opacity: 0;
+  margin-top: 28px;
+  pointer-events: none;
+}
+.wrapper.active .content{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.content .row{
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .column{
+  width: calc(100% / 2 - 15px);
+}
+.row .column label{
+  font-size: 1.06rem;
+}
+.sizes .column input{
+  width: 100%;
+  height: 49px;
+  outline: none;
+  margin-top: 7px;
+  padding: 0 15px;
+  font-size: 1.06rem;
+  border-radius: 4px;
+  border: 2px solid #aaa;
+  transition: 0.2s ease;
+}
+.sizes .column input:focus{
+  padding: 0 14px;
+  border: 2px solid #06cab0;
+  transition: 0.2s ease;
+  box-shadow: 0 12px 16px 0 rgba(6, 223, 139, 0.24),0 17px 50px 0 rgba(11, 231, 176, 0.19);
+
+}
+.content .checkboxes{
+  margin-top: 20px;
+}
+.checkboxes .column{
+  display: flex;
+  align-items: center;
+}
+.checkboxes .column input{
+  width: 17px;
+  height: 17px;
+  margin-right: 9px;
+  accent-color: #059b7b;
+}
+.content .download-btn{
+  width: 100%;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.06rem;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 30px 0 10px;
+  background: hsl(172, 99%, 34%);
+  text-transform: initial;
+  transition: 0.2s ease-in-out;
+}
+.content .download-btn:hover{
+    background: hsl(172, 99%, 28%);
+}
+.footer{
+    border: 2px dotted #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1em;
+    width: 35%;
+    display: flex;
+    position: absolute;
+    top: 630px;
+    margin-top: 2rem;
+    padding: 2em 2em;
+    overflow: hidden;
+    padding-left: 1em;
+    animation: display 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.footer a{
+    text-decoration: none;
+    color: hsl(180, 100%, 29%);
+    transition: 0.4s ease-in-out;
+}
+.footer a:hover{
+    color: hsl(180, 100%, 19%);
+    text-decoration: underline;
+}
+.footer li{
+    padding: 5px 5px;
+    text-align: start;
+}
+.footer li a::before{
+    content: '\00bb';
+    padding: 10px 5px;
+}
+.footer h3{
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .footer{
+        width: 95%;
+    }
+    @keyframes change {
+        0%{
+            background: linear-gradient(90deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+        }
+        30%{
+            background: linear-gradient(90deg,rgb(1, 209, 88),80%,rgb(43, 177, 255))
+        }
+        50%{
+            background: linear-gradient(90deg,rgb(1, 209, 88),50%,rgb(1, 209, 88))
+        }
+        70%{
+            background: linear-gradient(90deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+        }
+        80%{
+            background: linear-gradient(90deg,rgb(1, 209, 88),30%,rgb(43, 177, 255))
+        }
+        90%{
+            background: linear-gradient(90deg,rgb(43, 177, 255),50%,rgb(43, 177, 255))
+    
+        }
+        100%{
+            background: linear-gradient(180deg,rgb(43, 177, 255),50%,rgb(1, 209, 88));
+            transition: 10s ease-in-out;
+            animation-delay: 6s;
+        }
+    }
+}
