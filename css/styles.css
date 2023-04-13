@@ -269,5 +269,7 @@ body{
     }
 .wrapper.active{
   height: 555px;
+padding-bottom: 20px;
+overflow: hidden;
 }
 }
