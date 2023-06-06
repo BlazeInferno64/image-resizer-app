@@ -3,10 +3,10 @@ Hello everyone, in this repository I'm going to show you all how to make a image
 |---------------|
 # View it here-
 
-<a href="https://blaizinginfernodragon123.github.io/image-resizer-app">
+<a href="https://blazeinferno64.github.io/image-resizer-app/">
 
 ```
-https://blaizinginfernodragon123.github.io/image-resizer-app
+https://blazeinferno64.github.io/image-resizer-app/
 ```
 </a>
 
